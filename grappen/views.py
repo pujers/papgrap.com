@@ -6,7 +6,7 @@ from .models import Grap
 
 class GrapCreateView(CreateView):
     model = Grap
-    fields = ['vraag', 'antwoord']
+    fields = ['question', 'answer']
 
 class GrapDetailView(DetailView):
     model = Grap
@@ -16,5 +16,5 @@ class GrapListView(ListView):
 
 class GrapUpdateView(UpdateView):
     model = Grap
-    fields = ['vraag', 'antwoord']
+    fields = ['question', 'answer']
 
