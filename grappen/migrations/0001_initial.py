@@ -15,10 +15,10 @@ class Migration(migrations.Migration):
             name='Grap',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('question', models.TextField(max_length=200)),
-                ('answer', models.TextField(blank=True, max_length=100)),
-                ('created', models.DateTimeField(auto_now_add=True)),
-                ('updated', models.DateTimeField(auto_now=True)),
+                ('vraag', models.TextField(max_length=200)),
+                ('antwoord', models.TextField(blank=True, max_length=100)),
+                ('gemaakt', models.DateTimeField(auto_now_add=True)),
+                ('geupdate', models.DateTimeField(auto_now=True)),
             ],
         ),
     ]
