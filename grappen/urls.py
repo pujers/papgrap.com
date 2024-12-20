@@ -1,7 +1,8 @@
 from django.urls import path
 
-from .views import (GrapCreateView, GrapDetailView, GrapListView, 
-                    GrapUpdateView)
+from .views import (
+    GrapCreateView, GrapDetailView, GrapListView, GrapUpdateView
+)
 
 app_name = 'grappen'
 

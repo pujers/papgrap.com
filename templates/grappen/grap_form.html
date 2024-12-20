@@ -2,11 +2,13 @@
 
 {% block title %}Add/Update Grap{% endblock %}
 {% block main %}
-    <div class="card border-primary m-auto mb-3 text-center"
+    <div class="card border-primary m-auto mb-3 p-3"
         style="max-width: 30rem">
         <form method="post">
             {% csrf_token %}
-            {{ form }}
+            <table class="table">
+            {{ form.as_table }}
+            </table>
             <button class="btn btn-success float-right">Voeg</button>
         </form>
     </div>

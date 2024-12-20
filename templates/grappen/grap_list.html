@@ -3,11 +3,14 @@
 {% block title %}Grappen{% endblock %}
 
 {% block main %}
+    <a class="btn btn-success btn-sm float-right" href="{% url 'grappen:create' %}">+ Voeg Grap</a>
     <h2>Grappen</h2>
     <ul class="list-group list-group-flush mb-3">
         {%for grap in grap_list %}
             <li class="list-group-item">
                 <a href= "{{grap.get_absolute_url}}">{{ grap.question }}</a>
+                <a href="{% url 'grappen:update' grap.pk %}"
+                class="btn btn-info btn-sm float-right mr-2">Update</a>
             </li>'
         {%endfor%}'
     </ul>
