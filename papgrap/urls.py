@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('pages.urls')),
+    path('grappen/', include('grappen.urls')),   #all paths that begin with “jokes/” will get handed off to the jokes URLConf
+    path('', include('pages.urls')),
 ]

@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Local Apps
+    'grappen.apps.GrappenConfig',
     'pages.apps.PagesConfig',
+    
 ]
 
 MIDDLEWARE = [
