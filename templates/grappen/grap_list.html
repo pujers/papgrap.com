@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+
+{% block title %}Grappen{% endblock %}
+{% block main %}
+    <h2>Grappen</h2>
+    <ul class="list-group list-group-flush mb-3">
+        {% for grap in grap_list %}
+            <li class="list-group-item">{{ grap.question }}</li> <!--**-->
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+<!--The double curly braces hold a template variable (or expression) that shuld be evaluated.
+This loop is he django template equivalent of:
+for grap in Grap.objects.all():
+print(f'\n <li class="list-group-item">{grap.question}</li>\n')-->

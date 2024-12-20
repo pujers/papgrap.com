@@ -1,4 +1,7 @@
 from django.urls import path
+from .views import GrapListView
 
 app_name = 'grappen'
-urlpatterns = []
+urlpatterns = [
+    path('', GrapListView.as_view(), name='list'),
+]
